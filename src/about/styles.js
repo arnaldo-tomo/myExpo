@@ -30,4 +30,16 @@ export const AboutStyle = StyleSheet.create({
     width: "90%",
     height: "50%",
   },
+  load: {
+    justifyContent: "center",
+    alignItems: "center",
+    flex: 1,
+    backgroundColor: "#FFF",
+  },
+  tomei: {
+    width: "90%",
+    height: "50%",
+    justifyContent: "center",
+    alignItems: "center",
+  },
 });
