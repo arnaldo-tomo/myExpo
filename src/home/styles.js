@@ -31,4 +31,8 @@ export const HomeStyle = StyleSheet.create({
     fontWeight: "700",
     // color: "#0095f6",
   },
+  load: {
+    justifyContent: "center",
+    alignItems: "center",
+  },
 });
