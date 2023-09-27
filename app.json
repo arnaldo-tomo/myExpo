@@ -4,7 +4,7 @@
     "slug": "myExpo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/web.png.png",
+    "icon": "./assets/web.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/tabnine-logo.png",
@@ -19,12 +19,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/web.png.png",
+        "foregroundImage": "./assets/web.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.arnaldotomo.myExpo"
     },
     "web": {
       "favicon": "./assets/web.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "759a8e10-9948-4fca-91c9-ee03030d3bd8"
+      }
     }
   }
 }
