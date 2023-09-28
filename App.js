@@ -17,22 +17,6 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="LoginScreen"
-          component={LoginScreen}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="Register"
-          component={Register}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="ForgetPassword"
-          options={{ headerShown: false }}
-          component={ForgetPassword}
-        />
-
-        <Stack.Screen
           name="HomeScreen"
           options={{
             headerPressOpacity: 5,
@@ -64,6 +48,22 @@ export default function App() {
           }}
           component={HomeScreen}
         />
+        <Stack.Screen
+          name="LoginScreen"
+          component={LoginScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Register"
+          component={Register}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="ForgetPassword"
+          options={{ headerShown: false }}
+          component={ForgetPassword}
+        />
+
         <Stack.Screen
           name="About"
           options={{
