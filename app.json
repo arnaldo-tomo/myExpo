@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "Pensador",
+    "name": "Frases",
     "slug": "myExpo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/web.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/sa.jpg",
+    "userInterfaceStyle": "dark",
     "splash": {
       "image": "./assets/tabnine-logo.png",
       "resizeMode": "contain",
@@ -19,7 +19,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/web.png",
+        "foregroundImage": "./assets/sa.jpg",
         "backgroundColor": "#ffffff"
       },
       "package": "com.arnaldotomo.myExpo"
