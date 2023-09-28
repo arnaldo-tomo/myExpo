@@ -1,4 +1,9 @@
 import { StyleSheet } from "react-native";
+import {
+  SPACING_MEDIUM,
+  SPACING_LARGE,
+  SPACING_SMALL,
+} from "../themes/tamanho";
 export const HomeStyle = StyleSheet.create({
   container: {
     flex: 1,
@@ -15,8 +20,8 @@ export const HomeStyle = StyleSheet.create({
     shadowColor: "black",
     shadowOpacity: 20,
     shadowRadius: 20,
-    marginBottom: 12,
-    marginTop: 4,
+    marginBottom: 4,
+    marginTop: 12,
     elevation: 2,
   },
   Card: {
@@ -31,8 +36,12 @@ export const HomeStyle = StyleSheet.create({
     fontWeight: "700",
     // color: "#0095f6",
   },
-  load: {
+  spinner: {
+    flex: 1,
+    backgroundColor: "#FF",
+    marginTop: "90%",
     justifyContent: "center",
     alignItems: "center",
+    alignContent: "center",
   },
 });
