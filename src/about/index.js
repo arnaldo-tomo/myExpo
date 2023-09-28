@@ -26,16 +26,25 @@ export default function About({ route }) {
 
       .catch(function (error) {
         console.error(error);
+      })
+      .finally(() => {
+        setCarregando(false);
       });
   }, []);
 
   return (
-    <ScrollView>
-      {posts.map((item, index) => (
-        <View key={index} style={AboutStyle.container}>
-          <Text style={AboutStyle.texto}>{item.nome}</Text>
-        </View>
-      ))}
-    </ScrollView>
+    <View>
+      {carregando ? (
+        <ActivityIndicator />
+      ) : (
+        <ScrollView>
+          {posts.map((item, index) => (
+            <View key={index} style={AboutStyle.container}>
+              <Text style={AboutStyle.texto}>{item.nome}</Text>
+            </View>
+          ))}
+        </ScrollView>
+      )}
+    </View>
   );
 }
