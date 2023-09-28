@@ -25,10 +25,11 @@ export default function HomeScreen({ navigation }) {
       .get("https://pensador.bytebraine.com/api/Categoria")
       .then((response) => {
         setPosts(response.data.categorias);
-        setCarregando(false);
       })
       .catch((error) => {
         console.error("Erro ao buscar dados da API:", error);
+      })
+      .finally(() => {
         setCarregando(false);
       });
   }, []);
@@ -37,15 +38,15 @@ export default function HomeScreen({ navigation }) {
     <View>
       <StatusBar />
       {carregando ? ( // Verifica se os dados estão carregando
-        <ActivityIndicator size="large" color="#0000ff" />
+        <View style={HomeStyle.spinner}>
+          <ActivityIndicator size="large" color="#0000ff" />
+        </View>
       ) : (
         <FlatList
           data={posts}
           keyExtractor={(item) => item.id.toString()}
           renderItem={({ item }) => (
             <View style={HomeStyle.container}>
-              <StatusBar />
-
               <TouchableOpacity
                 style={HomeStyle.Click}
                 onPress={() => mandar(item.nome)}
